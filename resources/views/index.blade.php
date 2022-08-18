@@ -16,6 +16,8 @@
             <h1>Menu</h1>            
             <a href="/">Inicio</a>
             <br>
+            <a href="/cliente">Novo Cliente</a>
+            <br>            
             <a href="/sobre">Sobre</a>
         </div>
 

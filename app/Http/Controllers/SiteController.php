@@ -14,7 +14,15 @@ class SiteController extends Controller
         return view('index', ['clientes' => $clientes]);
     }
 
+    public function cliente() {
+        return view('novoCliente');
+    }
+
+    public function clientecadastro() {
+        return view('sobre');
+    } 
+
     public function sobre() {
         return view('sobre');
-    }
+    }    
 }

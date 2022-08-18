@@ -16,4 +16,8 @@ use App\Http\Controllers\SiteController;
 
 Route::get('/', [SiteController::class, 'index']);
 
+Route::get('/cliente', [SiteController::class, 'cliente']);
+
+Route::get('/clientecadastro', [SiteController::class, 'clientecadastro']);
+
 Route::get('/sobre', [SiteController::class, 'sobre']);

@@ -26,3 +26,11 @@ img {
     width: 100%;
     background-color: rgb(50, 56, 110, 0.363);
 }
+
+.retornar {
+    font-size: large;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(55, 57, 75, 0.363);
+}
