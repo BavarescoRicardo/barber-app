@@ -23,43 +23,28 @@
             <p>Lista de barbearias cadastradas</p>        
         </div>
         
-        <div class="row">
-            <div class="col">
-                <p>1</p>
+        @foreach($clientes as $cliente)  
+            <div class="row">
+                <div class="col">
+                    <p>{{$cliente->nome}}</p>                
+                </div>
+                <div class="col">
+                    <p>{{$cliente->endereco}}</p>
+                </div>
             </div>
-            <div class="col">
-                <p>2</p>
-            </div>
-            <div class="col">
-                <p>3</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <p>1</p>
-            </div>
-            <div class="col">
-                <p>2</p>
-            </div>
-            <div class="col">
-                <p>3</p>
-            </div>
-        </div>   
-
-        <div class="row">
-            <div class="col">
-                <p>1</p>
-            </div>
-            <div class="col">
-                <p>2</p>
-            </div>
-            <div class="col">
-                <p>3</p>
-            </div>
+        @endforeach
         </div>
     </div>
 
+    <div class="fotos">
+        <div class="row">
+            <div class="col">
+                <img src="/img/barbearia_abstrata.png" alt="logo">
+            </div>
+        </div>   
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
 
