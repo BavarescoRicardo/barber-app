@@ -1,0 +1,21 @@
+body {
+    background-color: rgba(209, 216, 228, 0.651);
+}
+
+.menu {
+    background-color: rgba(50, 56, 110, 0.363);
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+img {    
+    width: 150px;
+    height: 130px;
+    float: right;
+}
+
+.informacoes {
+    margin-top: 25px;
+    text-align: center;
+}
