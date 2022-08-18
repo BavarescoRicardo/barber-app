@@ -25,7 +25,7 @@
             <p>Lista de barbearias cadastradas</p>        
         </div>
         
-        @foreach($clientes as $cliente)  
+        @foreach($clientes as $cliente)           
             <div class="row">
                 <div class="col">
                     <p>{{$cliente->nome}}</p>                
@@ -33,9 +33,12 @@
                 <div class="col">
                     <p>{{$cliente->endereco}}</p>
                 </div>
+                <div class="col">
+                    <a href="/remover/{{$cliente->id}}" class="btn btn-link" role="button">Remover {{$cliente->id}}</a>
+                </div>
             </div>
         @endforeach
-        </div>
+
     </div>
 
     <div class="fotos">

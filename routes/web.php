@@ -20,4 +20,6 @@ Route::get('/cliente', [SiteController::class, 'cliente']);
 
 Route::post('/cliente', [SiteController::class, 'store']);
 
+Route::get('/remover/{id}', [SiteController::class, 'delete']);
+
 Route::get('/sobre', [SiteController::class, 'sobre']);

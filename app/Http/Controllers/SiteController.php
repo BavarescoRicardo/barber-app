@@ -28,6 +28,14 @@ class SiteController extends Controller
         $cliente->save();
 
         return redirect('/');
+    }
+
+    public function delete($idCliente) {       
+        $cliente = Cliente::findOrFail($idCliente);
+        
+        $cliente->delete();
+
+        return redirect('/');
     } 
 
     public function sobre() {
