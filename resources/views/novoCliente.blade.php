@@ -11,20 +11,21 @@
 <body>    
     <div id="container-criar" class="col-md-6">
         <h1>Adicionar Cliente</h1>
-        <form action="/clientecadastro" method="post">
+        <form action="/cliente" method="POST">
+            @csrf
             <div class="form-group">
                 <label for="nome">Nome:</label>
                 <input type="text" class="form-control" id="nome" name="nome">                
             </div>
 
             <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome">                
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" name="endereco">                
             </div>
 
             <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome">                
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="email">                
             </div>
 
             <input type="submit" class="btn btn-primary" value="Novo Cliente">

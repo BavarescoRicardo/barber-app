@@ -18,6 +18,6 @@ Route::get('/', [SiteController::class, 'index']);
 
 Route::get('/cliente', [SiteController::class, 'cliente']);
 
-Route::get('/clientecadastro', [SiteController::class, 'clientecadastro']);
+Route::post('/cliente', [SiteController::class, 'store']);
 
 Route::get('/sobre', [SiteController::class, 'sobre']);

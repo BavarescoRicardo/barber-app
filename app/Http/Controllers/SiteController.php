@@ -18,8 +18,16 @@ class SiteController extends Controller
         return view('novoCliente');
     }
 
-    public function clientecadastro() {
-        return view('sobre');
+    public function store(Request $request) {
+        $cliente = new cliente;
+
+        $cliente->nome = $request->nome;
+        $cliente->endereco = $request->endereco;
+        $cliente->email = $request->email;
+
+        $cliente->save();
+
+        return redirect('/');
     } 
 
     public function sobre() {
